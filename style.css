@@ -326,8 +326,8 @@ body {
         line-height: 32px;
     }
 
-    .paginator__item--active .paginator__link {
-        background: #fff;
+    .paginator__item--active .paginator__link:hover {
+        background: #fff !important;
         color: #F5170E;
     }
 
@@ -425,7 +425,7 @@ body {
         background-image: url("./img/telegram.png");
     }
 
-    ..socials__item--icon--telegram .socials__link:hover {
+    .socials__item--icon--telegram .socials__link:hover {
         background-image: url("./img/t-hover.png");
     }
 
@@ -433,7 +433,7 @@ body {
         background-image: url("./img/vk.png");
     }
 
-    ..socials__item--icon--vk .socials__link:hover {
+    .socials__item--icon--vk .socials__link:hover {
         background-image: url("./img/vk-hover.png");
     }
 
@@ -441,7 +441,7 @@ body {
         background-image: url("./img/f.png");
     }
 
-    ..socials__item--icon--fb .socials__link:hover {
+    .socials__item--icon--fb .socials__link:hover {
         background-image: url("./img/f-hover.png");
     }
 
@@ -449,6 +449,6 @@ body {
         background-image: url("./img/in.png");
     }
 
-    ..socials__item--icon--insta .socials__link:hover {
+    .socials__item--icon--insta .socials__link:hover {
         background-image: url("./img/in-hover.png");
     }
