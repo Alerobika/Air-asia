@@ -4,10 +4,9 @@ body {
     font-size: 16px;
     line-height: 1.42;
     background: #001821;
-    /* background-image: url(img/hero.png);
-    background-repeat: no-repeat; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin: 0;
    }
 
    a {
@@ -231,6 +230,7 @@ body {
         text-transform: uppercase;
         color: #fff;
         padding: 19px 27px;
+        border: 1px solid transparent;
         
     }
 
@@ -258,7 +258,7 @@ body {
         vertical-align: top;
         position: relative;
         border-radius: 5px;
-        overflow: hedden;
+        overflow: hidden;
         margin-right: 20px;
     }
 
@@ -285,6 +285,7 @@ body {
     }
 
     .news__date {
+        display: inline-block;
         font-size: 14px;
         margin-bottom: 15px;
     }
@@ -326,9 +327,9 @@ body {
         line-height: 32px;
     }
 
-    .paginator__item--active .paginator__link:hover {
-        background: #fff !important;
-        color: #F5170E;
+    .paginator__item--active .paginator__link {
+        background: #fff;
+        color: red;
     }
 
     .about:before, .about__desc {
@@ -352,7 +353,7 @@ body {
     .about__desc {
         background: inherit;
         padding: 70px 81px;
-        color: #000000;
+        color: #000000 !important;
         width: 664px;
         position: absolute;
 
@@ -400,6 +401,7 @@ body {
     .socials__item {
         display: inline-block;
         vertical-align: middle;
+        margin-right: 6px;
     }
 
     .socials__item:last-child {
@@ -411,7 +413,6 @@ body {
         text-decoration: none;
         width: 36px;
         height: 36px;
-        margin-right: 6px;
         background: center center no-repeat;
     }
 
