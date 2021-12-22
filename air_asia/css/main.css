@@ -74,9 +74,6 @@ body {
        margin-right: 77px;
    }
 
-.menu {
-    }
-
     .menu__item {
         display: inline-block;
         vertical-align: middle;
@@ -286,14 +283,14 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        position: absolute;
     }
 
     .news__content {
-         left: 0;
-        right: 0;
         padding: 14px 29px;
         min-height: 155px;
         line-height: 1.4;
+        position: relative;
         
     }
 
@@ -364,6 +361,7 @@ body {
         width: 490px;
         height: 505px;
         background: url("../img/gates.png") center center / cover no-repeat;
+        display: block;
     }
 
     .about {
@@ -378,7 +376,7 @@ body {
         padding: 70px 81px;
         color: #000000 !important;
         width: 664px;
-        position: absolute;
+        position: relative;
 
     }
 
@@ -406,19 +404,35 @@ body {
         justify-content: space-between;
         margin-left: -141px;
         margin-top: 96px;
+        position: relative;
     }
 
     .about__content-img {
         display: flex;
+        position: absolute;
     }
 
-    .footer-container__content {
-        border-top: 1px solid#1a3038;
+    .footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-top: 45px;
         margin-bottom: 65px;
+    }
+
+    .footer-container {
+        max-width: 100%;
+        background: #001821;
+        color: #fff;
+    }
+
+    .footer-container__section {
+        height: 146px;
+        margin-top: 15px;
+    }
+
+    .footer-container__content {
+        border-top: 1px solid#1a3038;
     }
 
     .footer-container__col {
