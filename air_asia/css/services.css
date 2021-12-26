@@ -175,12 +175,12 @@ img {
  .page-content {
      background: #F2F2F2;
      color: #303030;
-     padding: 40px 0;
+     padding: 39px 0;
  }
 
  .service {
      display: flex;
-     padding: 55px 51px 0 15px;
+     padding: 53px 51px 0 15px;
      text-decoration: none;
  }
 
@@ -193,10 +193,9 @@ img {
  .service__content {
      flex: 1;
      padding-top: 11px;
-     display: flex;
-    flex-wrap: wrap;
+    }
 
- }
+
  .service__title {
     font-size: 36px;
     font-weight: bold;
@@ -206,13 +205,12 @@ img {
 
  .service__desc {
      line-height: 1.7;
-     margin-bottom: 35px;
+     margin-bottom: 33px;
  }
 
 .button {
     background: #F5170E;
     border-radius: 35px;
-    margin-left: 24px;
     
     font-size: 14px;
     font-weight: bold;
@@ -238,7 +236,7 @@ img {
     display: flex;
     justify-content: center;
     margin-bottom: 138px;
-    margin-top: 55px;
+    margin-top: 64px;
 }
 
 .paginator__list {
@@ -296,6 +294,7 @@ img {
     line-height: 56px;
     font-weight: bold;
     margin-bottom: 52px;
+    padding-left: 15px;
 }
 
 .partners__list {
