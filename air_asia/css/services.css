@@ -4,7 +4,7 @@
     font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.42;
-    background: #F2F2F2;
+    background: #fff;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -42,6 +42,12 @@ img {
     max-width: 100%;
 }
 
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .top-line {
     background: url(../img_services/headline\ 1.png) center top no-repeat;
     min-height: 415px;
@@ -64,7 +70,6 @@ img {
 
 .header {
     padding-top: 25px;
-    margin-bottom: 116px;
     color: #fff;
     display: flex;
     justify-content: space-between; 
@@ -135,12 +140,11 @@ img {
      line-height: 3;
  }
 
- .page__title {
+ .page-title {
     font-size: 72px;
-    line-height: 1px;
+    line-height: 84px;
     font-weight: bold;
-    padding-bottom: 124px;
-    padding-left: 14px;
+    padding: 103px 0 109px 19px;
  }
 
  .breadcrumbs__list {
@@ -173,7 +177,7 @@ img {
  }
 
  .page-content {
-     background: #F2F2F2;
+     background: #fff;
      color: #303030;
      padding: 39px 0;
  }
@@ -205,7 +209,7 @@ img {
 
  .service__desc {
      line-height: 1.7;
-     margin-bottom: 33px;
+     margin-bottom: 32px;
  }
 
 .button {
@@ -285,8 +289,8 @@ img {
 }
 
 .partners--bg--grey {
-    background: #F4F5F5;
-    margin-bottom: 72px;
+    background: #F2F2F2;
+    padding-bottom: 75px;
 }
 
 .partners__title {
