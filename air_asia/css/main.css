@@ -9,6 +9,11 @@ body {
     margin: 0;
    }
 
+   html, body {
+       height: 100%;
+       width: 100%;
+   }
+
    a {
        color: inherit;
        text-decoration: none;
@@ -45,6 +50,15 @@ body {
        width: 1141px;
    }
 
+   .wrapper--welcome {
+       background: url(../img_welcome/bg.png) center center no-repeat;
+       height: 100%;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+
    .wrapper__container {
        display: flex;
        flex-direction: column;
@@ -53,8 +67,8 @@ body {
    }
 
    .header {
-       padding-top: 25px;
-       margin-bottom: 116px;
+       padding-top: 22px;
+       margin-bottom: 113px;
        display: flex;
        justify-content: space-between; 
        align-items: center;  
@@ -120,10 +134,53 @@ body {
         top: 12.64px;
     }
 
-    .contacts__schedule {
+    .dropdown__link {
         font-size: 13px;
         text-decoration: underline;
-        color: #DA0100;
+        color: #98A4A8;  
+    }
+
+    .dropdown__link:hover {
+        color: #fff;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown:hover .dropdown__menu {
+        display: block;
+    }
+
+    .dropdown__menu {
+        position: absolute;
+        background: #CDD1D2;
+        color: #1E1F20;
+        border: 1px solid #1E1F20;
+        padding: 15px;
+        width: 160px;
+        height: 80px;
+        font-size: 13px;
+        line-height: 21px;
+        font-weight: bold;
+        top: 100%;
+        left: 35px;
+        display: none;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        border-radius: 5px;
+        margin-top: 7px;
+    }
+
+    .dropdown__menu::before {
+        content: '';
+        border: 18px solid transparent;
+        border-bottom: 14px solid #CDD1D2;
+        position: absolute;
+        left: 64%;
+        margin-left: -12px;
+        top: -27px;
+        width: 0;
     }
 
     .preview {
@@ -369,7 +426,7 @@ body {
     .about {
         height: 552px;
         width: 1141px;
-        margin-bottom: 3px;
+        margin-bottom: 53px;
         display: flex;
     }
 
@@ -419,7 +476,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 45px;
+        padding-top: 0px;
         margin-bottom: 65px;
     }
 
@@ -430,7 +487,7 @@ body {
     }
 
     .footer-container__section {
-        height: 146px;
+        height: 96px;
         margin-top: 15px;
     }
 
@@ -510,51 +567,63 @@ body {
 
     /* welcome page */
 
-    .welcome {
-        display: flex;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        background: url(../img_welcome/bg.png) center bottom / cover no-repeat;
-        overflow: hidden;
+
+
+    .animation {
+        position: absolute;
+        top: 130px;
+        left: 156px;
+        text-align: center;
+        animation: scale 1.7s linear infinite;
+        animation-delay: .3s;
     }
 
-    .central {
-        display: block;
+    .animation__img {
         position: relative;
-        width: 591px;
-        height: 311px;
-        margin-top: 161px;
+        height: 44%;
+        width: 35%;
     }
 
-    .shades__img {
+    .animation__img--shades {
         position: absolute;
-        bottom: 237px;
-        left: 0px;
+        top: 66px;
+
     }
 
-    .central__logo {
-        position: absolute;
-        bottom: 305px;
-        left: 159px;
+    .animaton__logo {
+        margin-bottom: 0px;
     }
 
-    .central__title {
-        position: absolute;
+    .animation__text {
         font-size: 18px;
-        line-height: 21px;
-        color: #FFFFFF;
-        bottom: 268px;
-        left: 200px;
-    }
+        columns: #fff;
+        margin-bottom: 51px;
+        margin-top: -8px;
+  }
 
-    .button--red {
-        position: absolute;
-        padding: 18px 58px;
-        top: 82px;
-        left: 186px;
-    }
+  .animation_button {
+      padding: 18px 58px;
+      margin-right: 25px;
+  }
+
+  @keyframes scale {
+      0%{
+        transform: scale(1);
+      }
+
+      35%{
+        transform: scale(0.8);
+      }
+
+      65%{
+        transform: scale(1);
+      }
+
+      85%{
+        transform: scale(0.8);
+      }
+
+      100%{
+        transform: scale(1);
+      }
+  }
